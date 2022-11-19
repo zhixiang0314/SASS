@@ -5,8 +5,9 @@
   "main": "index.js",
   "scripts": {
     "test": "echo hello world",
-    "s":"echo hello world",
-    "watch":"sass --watch src/index.scss out/index.css"
+    "v": "sass --version",
+    "s": "sass src/index.scss out/index.css",
+    "watch": "sass --watch src/index.scss out/index.css"
   },
   "author": "",
   "license": "ISC",

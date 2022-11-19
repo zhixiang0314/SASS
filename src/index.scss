@@ -1,7 +1,44 @@
-.container{
-    background-color: aqua;
-    height: 20px;
-    width: 20px;
+// 导入语法
+@import './var.scss';
+
+.container {
+    background-color: $global-color;
+}
+
+div {
+    // @include font-layout;
+    // @include font-layout-cus(blue, 34px, 900)
+    @extend %able-to-extends;
+}
+
+.card {
+    border: 1px solid red;
+    height: 100px;
+    width: 100px;
+
+    div {
+        color: $global-color;
+    }
+
+    &:hover {
+        // 取到card，然后并列元素，.block
+        &~.block {
+            height: 400px;
+            width: 400px;
+            background-color: bisque;
+        }
+
+        background-color: #000;
+    }
+
+
+}
+
+
+    div{
+        color :$global-color;
+    }
+     
 }
 
 
